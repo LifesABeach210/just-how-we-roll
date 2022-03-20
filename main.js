@@ -29,7 +29,34 @@ const sortByNumber = function(arr) {
 /*******************
  * YOUR CODE BELOW *
  *******************/
+ let OneDice = document.querySelector("#d6-roll");
+OneDice.src = 'just-how-we-roll/images/d6/1.png';
 
+OneDice.setAttribute('src',"just-how-we-roll/images/d6/1.png");
+
+ //let DoubleDice = document.querySelector("#d6-roll").src = "just-how-we-roll/images/d6/2.png";
+ 
+ let  = document.querySelector('');
+ 
+ let  = document.querySelector('');
+ 
+ let  = document.querySelector('');
+ 
+ let  = document.querySelector('');
+ 
+ let  = document.querySelector('');
+ 
+ let  = document.querySelector('');
+ 
+ let  = document.querySelector('');
+ 
+ let  = document.querySelector('');
+ 
+ let  = document.querySelector('');
+ 
+ let  = document.querySelector('');
+ 
+ let  = document.querySelector('');
 
 
 /*******************
