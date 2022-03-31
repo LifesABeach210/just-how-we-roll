@@ -118,6 +118,13 @@ let average = getAverage(doubleSixes);
 average;
 console.log(average);
 MeanD6x2.innerText = average;
+
+let MeadD6D6 = document.querySelector("#double-d6-rolls-median");
+
+MeadD6D6.innerHTML = getMedian(doubleSixes);
+
+let ModeD6D6 = document.querySelector("#double-d6-rolls-mode");
+ModeD6D6.innerHTML = getMode(doubleSixes);
 }
 
 function Dice1(){
@@ -140,17 +147,19 @@ function Dice1(){
   
   sixes.push(roll);
   console.log(sixes);
- 
+ let ModeD6 = document.querySelector("#d6-rolls-mode");
 let average = getAverage(sixes);
 average;
 //console.log(average);
-let median = getMedian(sixes);
+ let Mean12 = document.querySelector("#d6-rolls-median");
+Mean12.innerHTML = getMedian(sixes);
+ModeD6.innerHTML = getMode(sixes);
 let displayAverage = document.querySelector('#d6-rolls-mean');
 displayAverage.innerHTML=average;
-getMedian(sixes); 
-medianD6.innerHTML=sorted;
 
-console.log(median);
+
+
+
 
 
 
@@ -191,6 +200,10 @@ let average = getAverage(twelves);
 average;
 console.log(average);
 Mean12.innerText=average;
+let Mode12 = document.querySelector("#d12-rolls-mode");
+Mode12.innerHTML=getMode(twelves);
+let Mead12 = document.querySelector("#d12-rolls-median");
+Mead12.innerHTML = getMedian(twelves);
 
 }
 
@@ -243,11 +256,18 @@ let average = getAverage(twenties);
 console.log(average);
 let displayAverage = document.querySelector('#d20-rolls-mean');
 displayAverage.innerHTML=average;
+let Mead20 = document.querySelector("#d20-rolls-median");
+Mead20.innerHTML = getMedian(twenties);
+let Mode20 = document.querySelector("#d20-rolls-mode")
+Mode20.innerHTML = getMode(twenties);
+
+
 };
 function getAverage2(array,ID){
 let average = getAverage(array);
 let displayAverage = document.querySelector(ID);
 displayAverage.innerHTML=average;
+
 };
 
 
